@@ -11,6 +11,11 @@
 //Input: J = "z", S = "ZZ"
 //Output: 0
 
+
+//通过hash的方法，先将字符串J中的每个字符串当作key存起来，再遍历字符串S，检查是否存在这些key。
+//•时间复杂度为O(s + j)。(s为字符串S的长度，j为字符串J的长度)
+//•空间复杂度为O(j)。
+
 class Solution {
 public:
     int numJewelsInStones(string J, string S) {
